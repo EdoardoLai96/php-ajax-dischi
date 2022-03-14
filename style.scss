@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+}
+
+main{
+ min-height: calc(100vh - 100px);
+}
+  
+
+header{
+    background-color: #313945;
+}
+
+.logo_box{
+    height: 100px;
+    padding: 10px;
+}
+
+.logo_box img{
+    height: 100%;
+}
+
+
+.ms_bg_primary{
+background-color: #212D3A;
+}
+
+.ms_bg_secondary{
+background-color: #313945;
+}
+
+.ms_w_min{
+    width: min-content;
+}
+.ms_h_min{
+    height: min-content;
+}
