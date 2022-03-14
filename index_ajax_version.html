@@ -15,16 +15,19 @@
             <div class="logo_box">
                 <img src="./images/spotify-1.svg" class="" alt="">
             </div>
-            <select id="tipo_di_genere" @change="selectGenre()" class="form-select ms_w_min ms_h_min" aria-label="Default select example">
+            <select v-model="selectedGenre" id="tipo_di_genere" class="form-select ms_w_min ms_h_min" aria-label="Default select example">
                 <option value="">Seleziona un genere</option>
-                <option value="genre">Rock</option>
+                <option value="Rock">Rock</option>
+                <option value="Pop">Pop</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Metal">Metal</option>
             </select>
         </div>
     </header>   
     <main class="ms_bg_primary">
         <div class="container py-5 d-flex justify-content-center">
             <div class="row gx-3 gy-3 flex-wrap h-100 flex-center disc_box">
-                <div class="col" v-for="(disc,index) in discCollection" :key="index">
+                <div class="col" v-for="(disc,index) in discsByGenres" :key="index">
                     <div class="card  border-0  ms_bg_secondary h-100 " style="width: 15rem;">
                         <img :src="disc.poster" class="card-img-top h-100 p-3" alt="...">
                         <h5 class="card-title text-center text-light fs-7">{{disc.title}}</h5>

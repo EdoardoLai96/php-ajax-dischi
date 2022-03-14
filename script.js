@@ -12,7 +12,16 @@ const app = new Vue({
     },
     data: {
     discCollection : [],
-
+    selectedGenre : "",
+    },
+    computed:{
+        discsByGenres(){
+            if(this.selectedGenre != ""){
+                return this.discCollection.filter(item => item.genre == this.selectedGenre)
+            }else{
+                return this.discCollection;
+            }
+        }
     }
 
 })
