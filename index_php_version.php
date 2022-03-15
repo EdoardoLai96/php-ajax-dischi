@@ -1,48 +1,6 @@
 <?php
-    $database = [
-        [
-            'title' => 'New Jersey',
-            'author' => 'Bon Jovi',
-            'year' => 1988,
-            'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg',
-            'genre' => 'Rock'
-        ],
-        [
-            'title' => 'Live at Wembley 86',
-            'author' => 'Queen',
-            'year' => 1992,
-            'poster' => 'https://images-na.ssl-images-amazon.com/images/I/71g40mlbinL._SX355_.jpg',
-            'genre' => 'Pop'
-        ],
-        [
-            'title' => 'Ten\'s Summoner\'s Tales',
-            'author' => 'Sting',
-            'year' => 1993,
-            'poster' => 'https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg',
-            'genre' => 'Pop'
-        ],
-        [
-            'title' => 'Steve Gadd band',
-            'author' => 'Steve Gadd Band',
-            'year' => 2018,
-            'poster' => 'https://m.media-amazon.com/images/I/81UtLzBDoEL._SS500_.jpg',
-            'genre' => 'Jazz'
-        ],
-        [
-            'title' => 'Brave new World',
-            'author' => 'Iron Maiden',
-            'year' => 2000,
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/0/03/Iron_Maiden_-_Brave_New_World.jpg',
-            'genre' => 'Metal'
-        ],
-        [
-            'title' => 'One more car, one more rider',
-            'author' => 'Eric Clapton',
-            'year' => 2002,
-            'poster' => 'https://images-na.ssl-images-amazon.com/images/I/81MDAIdh78L._SY355_.jpg',
-            'genre' => 'Rock'
-        ]
-    ];
+
+    include  __DIR__ . '/database.php';
 
 ?>
 
@@ -89,12 +47,6 @@
                        echo '</div>';
                     }
                 ?>
-                <!-- <div class="card  border-0  ms_bg_secondary h-100 " style="width: 15rem;">
-                    <img src="https://i.picsum.photos/id/943/200/200.jpg?hmac=cFvTm_QTKVRRCLsOsMx1m2RmksDL0_U5AfcmnQ7TVds" class="card-img-top h-100 p-3" alt="...">
-                    <h5 class="card-title text-center text-light fs-7">{{disc.title}}</h5>
-                    <p class="card-text text-center mb-0 text-secondary">{{disc.author}}</p>
-                    <p class="card-text text-center text-secondary mb-1">{{disc.year}}</p>
-                </div> -->
             </div>
 
             </div>
