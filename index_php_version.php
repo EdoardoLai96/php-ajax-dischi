@@ -39,7 +39,7 @@
                         
                      echo '<div class="col">';
                      echo '<div class="card  border-0  ms_bg_secondary h-100" style="width: 15rem;">';
-                           echo '<img src=' . $value["poster"] .' class="card-img-top h-100 p-3" alt="...">';
+                           echo '<img src="' . $value["poster"] .'" class="card-img-top h-100 p-3" alt="...">';
                            echo '<h5 class="card-title text-center text-light fs-7">' . $value["title"] . '</h5>';
                            echo '<p class="card-text text-center mb-0 text-secondary">' . $value["author"] . '</p>';
                             echo '<p class="card-text text-center text-secondary mb-1">' . $value["year"] . '</p>';
